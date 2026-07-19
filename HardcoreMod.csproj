@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <OutputPath>$(SolutionDir)Output\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\**" />
+    <EmbeddedResource Remove="Assets\**" />
+    <None Remove="Assets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ReferencedAssemblies\MelonLoader.dll" />
+    <Reference Include="ReferencedAssemblies\UnityEngine.CoreModule.dll" />
+	<Reference Include="ReferencedAssemblies\Player.dll" />
+	<Reference Include="ReferencedAssemblies\Player.Interface.dll" />
+	<Reference Include="ReferencedAssemblies\Tools.dll" />
+	<Reference Include="ReferencedAssemblies\Ship.dll" />
+	<Reference Include="ReferencedAssemblies\Ship.Interface.dll" />
+	<Reference Include="ReferencedAssemblies\UnityEngine.dll" />
+	<Reference Include="ReferencedAssemblies\UnityEngine.PhysicsModule.dll" />
+	<Reference Include="ReferencedAssemblies\Unity.InputSystem.dll" />
+	<Reference Include="ReferencedAssemblies\UnityEngine.InputModule.dll" />
+	<Reference Include="ReferencedAssemblies\0Harmony.dll" />
+	<Reference Include="ReferencedAssemblies\Core.dll" />
+  </ItemGroup>
+
+</Project>
